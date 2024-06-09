@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mcgooey",
+  "version": "${version}",
+  "name": "MCGUI",
+  "description": "A GUI library for Minecraft mods.",
+  "authors": [
+    "Shizukana Otaku"
+  ],
+  "contact": {
+    "repo": "https://github.com/javatrix/MCGUI"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.shizukanaotaku.mcgooey.client.MCGooeyClient"
+    ],
+    "main": [
+      "me.shizukanaotaku.mcgooey.MCGooey"
+    ]
+  },
+  "mixins": [
+    "mcgui.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
